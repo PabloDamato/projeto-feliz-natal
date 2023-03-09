@@ -51,7 +51,7 @@ body {
 }
 
 .navbar-header a:hover {
-    color: #DA2535;
+    color: #F9F9F9;
 }
 
 /*inicio---------------------------------------------------*/
@@ -104,6 +104,14 @@ body {
     color: #F9F9F9;
 }
 
+.inicio button:hover span {
+    color: #161212;
+}
+
+.inicio button:hover {
+    color: #161212;
+}
+
 .inicio-right {
     padding-right: 11.2rem;
 }
@@ -115,16 +123,15 @@ body {
 
 /* Acessórios------------------------------------------------*/
 
-.container {
+#acessories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    height: 62.5rem;
     padding-left: 11.2rem;
     padding-right: 11.2rem;
-}
-
-#acessories {
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    width: 100vw;
-    background-color: #f9f9f9;
 }
 
 #acessories .container .acessories-header {
@@ -243,3 +250,7 @@ body {
     gap: 4.2rem;
 }
 
+.navbar-footer-contact a img:hover{
+    border-radius: 25px;
+    background: #161212;
+}
