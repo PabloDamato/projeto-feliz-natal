@@ -1,0 +1,94 @@
+/* Acessórios */
+
+
+#acessories {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f9f9f9;
+}
+
+#acessories .container .acessories-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#acessories .container .acessories-header h2 {
+    color: #161212;
+    font-size: 48px;
+}
+
+#acessories .container .acessories-header p {
+    color: #404040;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+#acessories .container .acessories-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 32px;
+    gap: 139px;
+}
+
+#acessories .container .acessories-cards h4 {
+    margin-top: 17px;
+    font-size: 20px;
+    color: #161212;
+}
+
+#acessories .container .acessories-cards span {
+    font-size: 16px;
+    text-align: center;
+    color: #8D8D8D;
+    margin-top: 12px;
+    
+}
+
+#acessories .container .acessories-cards #presentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+#acessories .container .acessories-cards #doces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#acessories .container .acessories-cards #enfeites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+}
+
+#acessories .container .acessories-cards #love {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#acessories .container .acessories-cards img {
+    height: 200px;
+    width: 200px;
+}
+
+#acessories .container .acessories-cards .cards-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
