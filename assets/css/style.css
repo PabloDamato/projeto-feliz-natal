@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+}
+
+/*header---------------------------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.45rem;
+    background: #F7C7B9;
+}
+
+.header h1 {
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.header-left {
+    display: flex;
+    padding-left: 11.2rem;
+    gap: 1.2rem;
+}
+
+.header-right {
+    padding-right: 11.2rem;
+}
+
+.navbar-header ul {
+    display: flex;
+    list-style: none;
+    gap: 5.1rem;
+}
+
+.navbar-header a {
+    text-decoration: none;
+}
+
+.navbar-header a:hover {
+    color: #DA2535;
+}
+
+/*inicio---------------------------------------------------*/
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54.15rem;
+    background: #F7C7B9;
+}
+
+.inicio-left {
+    padding-left: 11.2rem;
+}
+
+.inicio h1 {
+    font-weight: 600;
+    font-size: 4.8rem;
+    padding-bottom: 2.4rem;
+    padding-right: 12.6rem;
+    line-height: 5.2rem;
+}
+
+.inicio p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    margin-right: 17rem;
+    line-height: 2.4rem;
+}
+
+.inicio button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 3.2rem;
+    gap: 1rem;
+    background: #DA2535;
+    border-radius: 0.8rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.inicio button span {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #F9F9F9;
+}
+
+.inicio-right {
+    padding-right: 11.2rem;
+}
+
+.inicio-right img {
+    width: 60rem;
+    height: 36rem;
+}
+
+/*footer----------------------------------------------------*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14rem;
+}
+
+.footer-left {
+    display: flex;
+    padding-left: 11.2rem;
+    gap: 1.2rem;
+}
+
+.footer-left h1 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.footer-right {
+    padding-right: 11.2rem;
+}
+
+.navbar-footer-contact ul {
+    display: flex;
+    list-style: none;
+    gap: 4.2rem;
+}
