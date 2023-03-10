@@ -219,6 +219,82 @@ body {
     align-items: center;
 }
 
+
+/* doação------------------------------------------------*/
+
+#donations {
+    height: 54.15rem;
+    background: #F7C7B9;
+    display: flex;
+    justify-content: space-around;
+}
+
+#donations .img-donations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#donations .img-donations img {
+    height: 400px;
+}
+
+#donations .content-donations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#donations .content-donations .donations-txt h2 {
+    font-size: 48px;
+    font-weight: 600;
+    width: 70%;
+    
+}
+
+#donations .content-donations .donations-txt p {
+    font-size: 16px;
+    text-align: left;
+}
+
+#donations .content-donations .btn-container {
+    display: flex;
+    margin-right: 510px;
+}
+
+#donations .content-donations .btn-donations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 3.2rem;
+    gap: 1rem;
+    background: #DA2535;
+    border-radius: 0.8rem;
+    border: 0;
+    cursor: pointer;
+}
+
+
+#donations .content-donations .btn-span {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #F9F9F9;
+}
+
+.btn-container button:hover {
+    color: #161212;
+}
+
+.btn-container span:hover {
+    color: #161212;
+}
+
+
+
 /*footer----------------------------------------------------*/
 
 .footer {
