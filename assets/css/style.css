@@ -32,6 +32,7 @@ body {
 
 .header-left {
     display: flex;
+    align-items: center;
     padding-left: 11.2rem;
     gap: 1.2rem;
 }
@@ -337,9 +338,58 @@ body {
 }
 
 /*media queries-------------------------------------------*/
+/*quando a tela for menor que 900px*/
+@media (max-width: 900px) {
+    .header-left {
+        padding-left: 5rem;
+    }
 
-/*quando a tela for menor que 600px*/
-@media (max-width: 600px) {
+    .header-right {
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 730px) {
+    #nav #menu {
+        gap: 3.1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/*quando a tela for menor que 630px*/
+@media (max-width: 630px) {
+
+    /*esconde o menu - com animação de entrada*/
+    #nav #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 9.45rem;
+        right: 0px;
+        background: #F7C7B9;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    /*quando nav recebe a classe:active habilita o menu*/
+    #nav.active #menu {
+        height: calc(100vh - 9.45rem);
+        visibility: visible;
+        overflow-y: auto;    
+    }
+
     /*habilita o menu hambúrguer*/
     #btn-mobile {
         display: block;
@@ -363,29 +413,31 @@ body {
         height: 2px;
         background: currentColor;
         margin-top: 5px;
+        transition: .3s;
+        position: relative;
     }
 
-    /*esconde o menu - com animação de entrada*/
-    #nav #menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        width: 100%;
-        top: 9.45rem;
-        right: 0px;
-        background: #8D8D8D;
-        transition: .6s;
-        z-index: 1000;
-        height: 0px;
-        visibility: hidden;
-        overflow: hidden;
+    #nav.active #hamburguer {
+        border-top-color: transparent;
     }
-    /*quando nav recebe a classe:active habilita o menu*/
-    #nav.active #menu {
-        height: calc(100vh - 9.45rem);
-        visibility: visible;
-        overflow-y: auto;    
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    .header-left {
+        padding-left: 3rem;
+    }
+
+    .header-right {
+        padding-right: 3rem;
     }
 }
