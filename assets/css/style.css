@@ -40,17 +40,22 @@ body {
     padding-right: 11.2rem;
 }
 
-.navbar-header ul {
+#nav ul {
     display: flex;
     list-style: none;
     gap: 5.1rem;
 }
 
-.navbar-header a {
+/*esconde o menu hambúrguer*/
+#btn-mobile {
+    display: none;
+}
+
+#nav a {
     text-decoration: none;
 }
 
-.navbar-header a:hover {
+#nav a:hover {
     color: #F9F9F9;
 }
 
@@ -329,4 +334,58 @@ body {
 .navbar-footer-contact a img:hover{
     border-radius: 25px;
     background: #161212;
+}
+
+/*media queries-------------------------------------------*/
+
+/*quando a tela for menor que 600px*/
+@media (max-width: 600px) {
+    /*habilita o menu hambúrguer*/
+    #btn-mobile {
+        display: block;
+        padding: .5rem 1rem;
+        /* font-size: 1rem; */
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        display: block;/*tirar ou n*/
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+    }
+
+    /*esconde o menu - com animação de entrada*/
+    #nav #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 9.45rem;
+        right: 0px;
+        background: #8D8D8D;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    /*quando nav recebe a classe:active habilita o menu*/
+    #nav.active #menu {
+        height: calc(100vh - 9.45rem);
+        visibility: visible;
+        overflow-y: auto;    
+    }
 }
