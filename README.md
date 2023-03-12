@@ -10,7 +10,7 @@ CSS
 
 # Layout do Projeto
 
-![Sign-in.png](/assets/img/project.jpg)
+![project.jpg](/assets/img/project.jpg)
 
 # Autores
 > <a href="https://github.com/PabloDamato">Pablo Damato</a> <br>
