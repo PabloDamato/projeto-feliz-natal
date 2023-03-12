@@ -1,5 +1,5 @@
 
-# Projeto Feliz Natal
+# Projeto Feliz Natal e Feliz Ano Novo!
 
 ## Sobre o projeto
 Este projeto faz parte de uma dinâmica de treinamento em equipe, na qual duplas são sorteadas a cada semana e trabalham juntas para construir um projeto front end. Cada dupla escolhe um tema para o projeto após ser sorteada. O objetivo do projeto é promover a colaboração e aprimorar as habilidades de trabalho em equipe dos participantes.
