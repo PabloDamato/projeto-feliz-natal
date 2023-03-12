@@ -119,12 +119,13 @@ body {
 }
 
 .inicio-right {
+    width: 100%;
     padding-right: 11.2rem;
 }
 
 .inicio-right img {
-    width: 60rem;
-    height: 36rem;
+    width: 100%;
+    height: 100%;
 }
 
 /* Acessórios------------------------------------------------*/
@@ -214,8 +215,8 @@ body {
 }
 
 #acessories .container .acessories-cards img {
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
 }
 
 #acessories .container .acessories-cards .cards-txt {
@@ -232,17 +233,20 @@ body {
     height: 54.15rem;
     background: #F7C7B9;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #donations .img-donations {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    padding-left: 11.2rem;
 }
 
 #donations .img-donations img {
-    height: 400px;
+    height: 70%;
+    width: 70%;
 }
 
 #donations .content-donations {
@@ -250,24 +254,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 2.4rem;
+    width: 50%;
+    padding-right: 11.2rem;
 }
 
 #donations .content-donations .donations-txt h2 {
-    font-size: 48px;
+    font-size: 4.5rem;
     font-weight: 600;
     width: 70%;
     
 }
 
 #donations .content-donations .donations-txt p {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: left;
 }
 
 #donations .content-donations .btn-container {
     display: flex;
-    margin-right: 510px;
+    width: 100%;
 }
 
 #donations .content-donations .btn-donations {
@@ -338,6 +344,52 @@ body {
 }
 
 /*media queries-------------------------------------------*/
+
+/*quando a tela for menor que 1320px*/
+@media (max-width: 1320px) {
+    #donations .content-donations .donations-txt h2 {
+        font-size: 4.3rem;
+    } 
+}
+
+/*quando a tela for menor que 1300px*/
+@media (max-width: 1300px) {
+    .inicio h1 {
+        font-size: 4rem;
+    }
+
+    #donations .content-donations .donations-txt h2 {
+        font-size: 4rem;
+    }
+
+    #donations .content-donations .donations-txt p {
+        font-size: 1.5rem;
+    }
+
+}
+
+/*quando a tela for menor que 1200px*/
+@media (max-width: 1200px) {
+    #donations .content-donations .donations-txt h2 {
+        font-size: 3.5rem;
+    }
+
+    #donations .content-donations .donations-txt p {
+        font-size: 1.3rem;
+    }
+}
+
+/*quando a tela for menor que 1024px*/
+@media (max-width: 1024px) {
+    .inicio h1 {
+        font-size: 3.5rem;
+    }
+
+    .inicio p {
+        font-size: 1.4rem;
+    }
+}
+
 /*quando a tela for menor que 900px*/
 @media (max-width: 900px) {
     .header-left {
@@ -347,20 +399,111 @@ body {
     .header-right {
         padding-right: 5rem;
     }
+
+    .inicio-right {
+        display: none;
+    }
+    
+    .inicio-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 11.2rem;
+    
+    }
+    
+    .inicio-left p {
+        text-align: center;
+        margin-right: 0;
+    }
+    
+    .inicio-left h1 {
+        padding-right: 0;
+    }
+
+    #donations .img-donations {
+        display: none;
+    }
+
+    #donations .content-donations {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    #donations .content-donations .donations-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #donations .content-donations .donations-txt h2 {
+        text-align: center;
+    }
+
+    #donations .content-donations .donations-txt p {
+        text-align: center;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
 }
 
+/*quando a tela for menor que 768px*/
+@media (max-width: 768px) {
+    .inicio {
+        height: 44.15rem;
+    }
+
+    .footer-left {
+        padding-left: 5rem;
+    }
+
+    .footer-right {
+        padding-right: 5rem;
+    }
+}
+
+/*quando a tela for menor que 730px*/
 @media (max-width: 730px) {
     #nav #menu {
         gap: 3.1rem;
     }
+
+    .inicio-left h1 {
+        padding-right: 0;
+        text-align: center;
+    }
 }
 
+/*quando a tela for menor que 700px*/
+@media (max-width: 700px) {
+    .footer-left {
+        display: none;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .footer-right .navbar-footer-contact ul {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+/*quando a tela for menor que 650px*/
 @media (max-width: 650px) {
     .header h1 {
         font-size: 2rem;
     }
 }
-
 
 /*quando a tela for menor que 630px*/
 @media (max-width: 630px) {
@@ -431,6 +574,59 @@ body {
     }
 }
 
+/*quando a tela for menor que 430px*/
+@media (max-width: 430px) {
+
+    .inicio-left {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+
+    .inicio-left button {
+        width: 100%;
+    }
+
+    .inicio {
+        height: 38.15rem;
+    }
+
+    #donations {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        height: 35rem;
+    }
+
+    #donations .content-donations .donations-txt h2 {
+        font-size: 3rem;
+    }
+
+    #donations .content-donations .donations-txt p {
+        font-size: 1.3rem;
+    }
+
+    #donations .content-donations .btn-donations {
+        width: 100%;
+    }
+
+    .footer {
+        height: 8rem;
+    }
+
+}
+
+/*quando a tela for menor que 375px*/
+@media (max-width: 375px) {
+
+    #donations .content-donations .donations-txt h2 {
+        font-size: 2.5rem;
+    }
+
+    #donations .content-donations .donations-txt p {
+        font-size: 1rem;
+    }
+}
+
+/*quando a tela for menor que 320px*/
 @media (max-width: 320px) {
     
     .header-left {
@@ -439,5 +635,25 @@ body {
 
     .header-right {
         padding-right: 3rem;
+    }
+
+    .inicio-left h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .inicio-left p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    #donations .content-donations .donations-txt h2 {
+        font-size: 2.1rem;
+    }
+
+    #donations .content-donations .donations-txt p {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
     }
 }
