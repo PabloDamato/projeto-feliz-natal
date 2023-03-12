@@ -448,6 +448,37 @@ body {
     .btn-container {
         justify-content: center;
     }
+
+    #acessories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300vh;
+    }
+
+    #acessories .container  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #acessories .container .acessories-header h2 {
+        font-size: 3.5rem;
+
+    }
+
+    #acessories .container .acessories-header p {
+        font-size: 1.4rem;
+        width: 312px;
+        height: 63px;
+        margin-bottom: 40px;
+    }
+
+    #acessories .container .acessories-cards {
+        display: block;
+
 }
 
 /*quando a tela for menor que 768px*/
@@ -612,6 +643,7 @@ body {
         height: 8rem;
     }
 
+
 }
 
 /*quando a tela for menor que 375px*/
@@ -656,4 +688,4 @@ body {
         font-size: 1.4rem;
         line-height: 2.1rem;
     }
-}
+}}
