@@ -392,6 +392,7 @@ body {
 
 /*quando a tela for menor que 900px*/
 @media (max-width: 900px) {
+    
     .header-left {
         padding-left: 5rem;
     }
@@ -478,7 +479,7 @@ body {
 
     #acessories .container .acessories-cards {
         display: block;
-
+    }        
 }
 
 /*quando a tela for menor que 768px*/
@@ -560,8 +561,8 @@ body {
     /*quando nav recebe a classe:active habilita o menu*/
     #nav.active #menu {
         height: calc(100vh - 9.45rem);
-        visibility: visible;
-        overflow-y: auto;    
+        visibility: visible;  
+        overflow-y: hidden;  
     }
 
     /*habilita o menu hambúrguer*/
@@ -688,4 +689,4 @@ body {
         font-size: 1.4rem;
         line-height: 2.1rem;
     }
-}}
+}
