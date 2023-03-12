@@ -10,14 +10,12 @@ CSS
 
 # Layout do Projeto
 
-<div align="center">
-<img src="/assets/img/printproject.svg" width="0px" alt="print do projeto">
-</div>
+![Sign-in.png](/assets/img/project.jpg)
 
 # Autores
 > <a href="https://github.com/PabloDamato">Pablo Damato</a> <br>
 > <a href="https://github.com/claudiosssant">Claudio Santos</a> <br>
 
 ## Link do projeto
-https://github.com/PabloDamato/projeto-feliz-natal.git
+https://landing-page-feliz-natal-ano-novo.netlify.app/
 
