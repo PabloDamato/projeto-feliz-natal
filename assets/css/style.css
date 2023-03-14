@@ -16,6 +16,10 @@ body {
     font-family: 'Poppins';
 }
 
+/* .no-scroll {
+    overflow: hidden;
+  } */
+
 /*header---------------------------------------------------*/
 .header {
     display: flex;
@@ -61,7 +65,6 @@ body {
 }
 
 /*inicio---------------------------------------------------*/
-
 .inicio {
     display: flex;
     justify-content: space-between;
@@ -129,7 +132,6 @@ body {
 }
 
 /* Acessórios------------------------------------------------*/
-
 #acessories {
     display: flex;
     justify-content: center;
@@ -226,9 +228,7 @@ body {
     align-items: center;
 }
 
-
 /* doação------------------------------------------------*/
-
 #donations {
     height: 54.15rem;
     background: #F7C7B9;
@@ -289,7 +289,6 @@ body {
     cursor: pointer;
 }
 
-
 #donations .content-donations .btn-span {
     font-weight: 600;
     font-size: 1.6rem;
@@ -297,18 +296,11 @@ body {
     color: #F9F9F9;
 }
 
-.btn-container button:hover {
+#donations .content-donations .btn-donations:hover .btn-span {
     color: #161212;
 }
-
-.btn-container span:hover {
-    color: #161212;
-}
-
-
 
 /*footer----------------------------------------------------*/
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -436,6 +428,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1.6rem;
     }
 
     #donations .content-donations .donations-txt h2 {
@@ -455,7 +448,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 300vh;
+        height: 100%;
     }
 
     #acessories .container  {

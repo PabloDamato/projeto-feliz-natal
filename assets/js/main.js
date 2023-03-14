@@ -1,6 +1,10 @@
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
+
+    /* const body = document.querySelector('body');
+    body.classList.toggle('no-scroll'); */
+
     if (event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
@@ -15,3 +19,8 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+const menuLinks = document.querySelectorAll('#nav a');
+menuLinks.forEach(function(menuLink) {
+  menuLink.addEventListener('click', toggleMenu);
+});
