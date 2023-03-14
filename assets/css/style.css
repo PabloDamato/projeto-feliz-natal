@@ -467,6 +467,7 @@ body {
 
     #acessories .container .acessories-header h2 {
         font-size: 3.5rem;
+        margin-top: 3%;
 
     }
 
@@ -480,6 +481,11 @@ body {
     #acessories .container .acessories-cards {
         display: block;
     }        
+    }
+    
+    #acessories .container .acessories-cards span {
+        margin-bottom: 3%;
+    }
 }
 
 /*quando a tela for menor que 768px*/
