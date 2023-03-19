@@ -2,9 +2,6 @@ const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
 
-    /* const body = document.querySelector('body');
-    body.classList.toggle('no-scroll'); */
-
     if (event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
