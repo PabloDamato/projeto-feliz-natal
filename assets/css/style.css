@@ -56,6 +56,10 @@ body {
     text-decoration: none;
 }
 
+#nav a:visited {
+    color: #161212;
+}
+
 #nav a:hover {
     color: #F9F9F9;
 }
